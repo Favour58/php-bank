@@ -1,0 +1,148 @@
+#billSession{
+     display: none;
+}
+#requestSection{
+     display: none;
+}
+#sendSection{
+     display: none;
+}
+#transferSection{
+     display: none;
+}
+#loanSection{
+     display: none;
+}
+#morePops{
+     display: none;
+     position: absolute;
+     right: 0;
+     cursor: pointer;
+     margin-right: 27.5px;
+     border-radius: 10px;
+     padding: 10px;
+     background: rgb(60, 60, 60,1);
+     font-size: 18px;
+     font-family: monospace;
+     margin-top: -13px;
+     row-gap: 7px;
+}
+#morePops div{
+     padding: 5px;
+     border-radius: 5px;
+     background-color: #E8F5AF;
+     color: black;
+     font-weight: bold;
+     text-align: center;
+
+
+}
+.popSection{
+     justify-content: center;
+     align-items: center;
+     display:flex;
+}
+.popSection form{
+     position: absolute;
+     top: 0;
+     background-color: #E8F5AF;
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 150px;
+}
+.popSection form h3{
+     margin-top: -10px;
+     margin-bottom: 70px;
+}
+.popSection form h3 span{
+     font-size: 17px;
+     font-family: 'Courier New', Courier, monospace;
+}
+.popSection form h3 i{
+     float: right;
+     font-size: 22px;
+     cursor: pointer;
+}
+.popSection form input{
+     width: 98%;
+     height: 35px;
+     background-color: transparent;
+     border-radius: 3px;
+     outline: none;
+     padding-left: 7px;
+     border: 1px solid black;
+     margin-bottom: 15px;
+}
+.popSection form input::placeholder{
+     font-size: 18px;
+     color: #131313;
+}
+.popSection form button{
+     border: none;
+     padding: 7px 20px;
+     font-size: 18px;
+     text-transform: uppercase;
+     margin-top: 10px;
+     background:linear-gradient(to right,#daf07f 25%,#A7FF4A 100%);
+}
+
+.popSection .alertPop{
+     position: absolute;
+     top: 0;
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 150px;
+}
+#alertmsg{
+     display: none;
+}
+.popSection .billContainer{
+      position: absolute;
+     top: 0;
+     background: rgb(60, 60, 60,1);
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 150px;
+     width: 300px;
+}
+#billSession .billContainer{
+     display: grid;
+     row-gap: 7px;
+}
+#billSession .billContainer  i{
+     float: right;
+     font-size: 25px;
+     cursor: pointer;
+}
+#billSession .billContainer div{
+     padding: 15px;
+     font-size: 18px;
+     background-color: #E8F5AF;
+     border-radius: 5px;
+     color: black;
+     text-align: center;
+     font-weight: bold;
+     font-family: monospace;
+     cursor: pointer;
+}
+
+@media(max-width:700px){
+     .popSection form{
+          margin-top: 150px;
+          width: 90%;
+          padding: 10px;
+     }
+
+     .popSection form h3{
+          margin-top: -5px;
+          margin-bottom: 50px;
+     }
+     .popSection form h3 span{
+          font-size: 17px;
+          font-family: 'Courier New', Courier, monospace;
+     }
+     .popSection form h3 i{
+          font-size: 20px;
+     }
+
+}

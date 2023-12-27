@@ -1,0 +1,52 @@
+body{
+     margin: 0;
+     background-color:#131313;
+}
+
+.navBar{
+     background: linear-gradient(to right,#FCFFD7,#D9FF3C,#C2FF27);
+     padding:2px 15px;
+     overflow: hidden;
+}
+.navBar img{
+     width:50px;
+}
+.navBar a{
+     float: right;
+     font-size: 20px;
+     text-decoration: none;
+     font-family: monospace;
+     margin-top: 15px;
+     color: black;
+}
+/* .navBar form{
+     margin-top: -40px;
+} */
+.container{
+     display: grid;
+     grid-template-columns: auto auto auto;
+     padding: 10px 70px;
+     column-gap: 30px;
+}
+.container a{
+     text-decoration: none;
+     color: black
+}
+.container div{
+     margin-top: 15px;
+     text-align: center;
+     padding: 35px;
+     border-radius: 10px;
+     font-size: 20px;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+}
+.register{
+     background-color: rgb(228, 71, 15);
+}
+.users{
+     background-color: rgb(50, 225, 50);
+}
+.loan{
+     background-color: greenyellow;
+}

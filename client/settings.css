@@ -1,0 +1,99 @@
+body{
+     margin: 0;
+     background-color:#131313;
+}
+
+.navBar{
+     background: linear-gradient(to right,#FCFFD7,#D9FF3C,#C2FF27);
+     padding:2px 15px;
+     overflow: hidden;
+}
+.navBar img{
+     width:50px;
+}
+.navBar a{
+     float: right;
+     font-size: 20px;
+     text-decoration: none;
+     font-family: monospace;
+     margin-top: 15px;
+     color: black;
+}
+.container{
+     margin-top: 5px;
+     text-align: center;
+}
+.container img{
+     width: 230px;
+     background-color: rgba(60, 60, 60, 0.3);
+     border-radius: 50%;
+}
+.container p{
+     font-size: 25px;
+     color: whitesmoke;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+}
+
+
+/* //logout// */
+.popSection{
+     justify-content: center;
+     align-items: center;
+     display:flex;
+}
+.popSection form{
+     position: absolute;
+     top: 0;
+     background-color: #E8F5AF;
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 150px;
+}
+.popSection form h3{
+     margin-top: -10px;
+     margin-bottom: 50px;
+}
+.popSection form h3 i{
+     float: right;
+     font-size: 22px;
+     cursor: pointer;
+}
+.popSection p{
+     font-size: 18px;
+     font-family: monospace;
+     font-weight: bold;
+}
+.popSection .btndiv{
+     display: grid;
+     grid-template-columns: auto auto;
+     column-gap: 130px;
+}
+.popSection .btndiv button{
+     border: none;
+     padding: 7px 20px;
+     font-size: 18px;
+     text-transform: uppercase;
+     margin-top: 10px;
+     border-radius: 5px;
+}
+.yes{
+     background-color: blue;
+     color: whitesmoke;
+}
+.no{
+     background-color: red;
+     color: whitesmoke;
+}
+
+
+@media(max-width:700px){
+     .navBar img{
+          width:50px;
+     }
+     /* .container img{
+          width: 80px;
+          background-color: rgba(60, 60, 60, 0.3);
+          border-radius: 50%;
+     } */
+}

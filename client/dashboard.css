@@ -1,0 +1,382 @@
+body{
+     margin: 0;
+     padding: 10px 10px;
+     background-color: #131313;
+}
+.boardSection{
+     position: relative;
+}
+.board{
+     background:linear-gradient(to right,#daf07f 25%,#A7FF4A 100%);
+     overflow: hidden;
+     border-radius: 30px 30px 0px 0px;
+     padding: 20px;
+}
+.board .text{
+     float: left;
+     width:50%;
+     height:250px ;
+}
+.board .text p{
+     text-transform: capitalize;
+     font-size: 35px;
+     font-weight: 600;
+     font-family: sans-serif;
+     color: black;
+}
+.board .text p #bal{
+     height: 30px;
+     width: 80%;
+     background-color: transparent;
+     border: none;
+     outline: none;
+     font-size: 35px;
+     color: black;
+}
+.board .text p button{
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+}
+.board .text p button i{
+     font-size: 20px;
+     color: black;
+}
+#hide{
+     display: none;
+}
+.board .image{
+     float: right;
+     width: 50%;
+     text-align: right;
+     /* padding: 10px 0px; */
+     height: 250px;
+}
+.board .image img{
+     width: 230px;
+     background-color: rgba(60, 60, 60, 0.3);
+     border-radius: 30%;
+}
+ .contents{
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     column-gap: 30px;
+     background:linear-gradient(to right,#daf07f 25%,#A7FF4A 100%);
+     padding: 20px 15px;
+     border-radius: 0px 0px 30px 30px;
+     margin-top: -2px;
+
+}
+.contents div{
+     background-color: rgba(60, 60, 60, 0.3);
+     text-align: center;
+     border-radius: 10px;
+     padding: 15px;
+}
+.contents div i{
+     font-size: 30px;
+}
+.contents div p{
+     font-size: 25px;
+     font-family: monospace;
+     cursor: pointer;
+}
+.more{
+     display: none;
+}
+
+.latesttransaction{
+     background-color:rgba(60, 60, 60, 0.5);
+     padding: 20px 100px;
+     margin-top: 20px;
+     border-radius: 20px;
+     margin-bottom: 100px;
+     /* font-family: sans-serif */
+}
+.latesttransaction .title{
+     color: #E0E0E0;
+     font-size: 30px;
+     text-transform: capitalize;
+     font-family: monospace;
+}
+.latesttransaction .type{
+     background-color: #202020;
+     padding: 20px;
+     border-radius: 8px;
+     overflow: hidden;
+     margin-top: 20px;
+}
+.latesttransaction .type i{
+     float: left;
+     font-size: 50px;
+     margin-top: 8px;
+     color: #A7FF4A;
+}
+.latesttransaction .type .details{
+     float: right;
+     width: 94%;
+}
+.details p{
+     height: 20px;
+     margin-top: 3px;
+}
+.details .text{
+     float: left;
+     font-size:18px;
+     color: #E0E0E0;
+}
+.details .amount{
+     float: right;
+     font-size:18px;
+     color: #E0E0E0;
+}
+.details .dateandtime{
+     float: left;
+     font-size:18px;
+     color: #E0E0E0;
+}
+.details .successful{
+     float: right;
+     font-size:18px;
+     color: #a9ec61;
+     font-weight: 600;
+}
+.footer{
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+}
+@media (max-width:1300px){
+     .latesttransaction{
+          padding: 20px 40px;
+     }
+     .latesttransaction .type i{
+          font-size: 35px;
+          margin-top: 13px;
+     }
+
+}
+
+
+
+
+@media (max-width:1100px){
+     .board .text{
+          height: 200px;
+     }
+     .board .text .name{
+          font-size: 40px;
+          margin-top: 5px;
+     } 
+     .board .text .balance{
+          font-size: 40px;
+     }
+     .board .text p #bal{
+          /* width: 330px;   */
+          font-size:40px;
+     }
+     .board .text p button{
+          margin-top: 30px;
+     }
+     .board .image{
+          height: 200px;
+     }
+     .board .image img{
+          width: 180px;
+     }
+     .contents{
+          column-gap: 15px;
+          padding: 15px;
+     }
+     .contents div i{
+          font-size: 20px;
+     }
+     .contents div p{
+          font-size: 22px;
+     }
+     .latesttransaction{
+          padding: 20px 70px;
+          margin-top: 20px;
+          border-radius: 20px;
+          /* font-family: sans-serif */
+     }
+     .latesttransaction .title{
+          color: #E0E0E0;
+          font-size: 25px;
+          text-transform: capitalize;
+          font-family: monospace;
+     }
+     .latesttransaction .type{
+          padding: 13px;
+     }
+     .latesttransaction .type i{
+          font-size: 40px;
+          margin-top: 13px;
+     }
+     .latesttransaction .type .details{
+          width: 92%;
+     }
+     .details p{
+          margin-top: 5px;
+     }
+}
+
+@media (max-width:900px){
+     .board{
+          background:linear-gradient(to right,#daf07f 15%,#A7FF4A 100%);
+     }
+      .board .text{
+          width: 55%;
+          height: 150px;
+     }
+     .board .text .name{
+          font-size: 30px;
+          margin-top: 2px;
+     } 
+     .board .text .balance{
+          font-size: 28px;
+     }
+     .board .text p #bal{
+          /* width: 300px;   */
+          font-size:28px;
+     }
+     .board .text p button{
+          margin-top: 30px;
+     }
+     .board .image{
+          width: 45%;
+          height: 150px;
+          text-align: right;
+          padding: 0px;
+     }
+     .board .image img{
+          width: 120px;
+     }
+     .contents{
+          grid-template-columns: auto auto auto;
+          column-gap: 15px;
+          padding: 15px;
+     }
+     .contents div{
+          padding: 10px;
+     }
+     .contents div:not(.request, .send, .more){
+          display: none;
+     }
+     .contents div i{
+          font-size: 23px;
+     }
+     .contents div p{
+          font-size: 22px;
+     }
+      .more{
+          display: block;
+     }
+     .latesttransaction{
+          padding: 15px 0px;
+          background-color: transparent;
+     }
+     .latesttransaction .title{
+          font-size: 27px;
+     }
+     .latesttransaction .type{
+          border-radius: 8px;
+          margin-top: 20px;
+     }
+     .latesttransaction .type i{
+          font-size: 45px;
+     }
+     .latesttransaction .type .details{
+          width: 90%;
+     }
+     .details p{
+          height: 15px;
+          margin-top: 9px;
+     }
+     .details .text{
+          font-size:19px;
+     }
+     .details .amount{
+          font-size:19px;
+     }
+     .details .dateandtime{
+          font-size:16px;
+     }
+     .details .successful{
+          font-size:19px;
+     }    
+}
+
+@media (max-width:700px){
+     .board{
+          background:linear-gradient(to right,#daf07f 15%,#A7FF4A 100%);
+     }
+      .board .text{
+          width: 60%;
+          height: 130px;
+     }
+     .board .text .name{
+          font-size: 25px;
+          margin-top: 0px;
+     } 
+     .board .text .balance{
+          font-size: 20px;
+     }
+     .board .text p #bal{
+          /* width: 165px;   */
+          font-size:19px;
+     }
+     .board .text p button{
+          margin-top: 10px;
+     }
+     .board .image{
+          width: 40%;
+          height: 130px;
+          padding: 0px;
+     }
+     .board .image img{
+          width: 80px;
+     }
+     .contents div{
+          padding: 10px 5px 0px 5px;
+     }
+     .contents div i{
+          font-size: 21px;
+     }
+     .contents div p{
+          font-size: 20px;
+     }
+     .latesttransaction{
+          padding: 15px 0px;
+          background-color: transparent;
+     }
+     .latesttransaction .title{
+          font-size: 20px;
+     }
+     .latesttransaction .type{
+          padding: 8px;
+     }
+     .latesttransaction .type i{
+          font-size: 30px;
+          margin-top: 14px;
+     }
+     .latesttransaction .type .details{
+          width: 85%;
+     }
+     .details p{
+          height: 15px;
+          margin-top: 3px;
+     }
+     .details .text{
+          font-size:16px;
+     }
+     .details .amount{
+          font-size:16px;
+     }
+     .details .dateandtime{
+          font-size:12px;
+     }
+     .details .successful{
+          font-size:15px;
+     }    
+}
